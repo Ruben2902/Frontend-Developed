@@ -15,27 +15,34 @@
     <meta property="og:url" content="https://your-portfolio-url.com">
     <meta property="og:image" content="https://your-portfolio-url.com/preview-image.jpg">   
     <meta property="og:site_name" content="Frontend Developed">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>Ruben Martinez</h1>
+                <img src="Umbrella.png" alt="Logo" style="height:40px; vertical-align:middle; margin-right:10px;">
+                <h1 id="nombre">Ruben Martinez</h1>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#workexperience">Work Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <div class="navegationOptions">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#workexperience">Work Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
         </nav>
     </header>
-    <main>
+    <main class="home" id="home">
         <h1>Frontend Developed</h1>
         <h2>Building responsive and accessible web applications</h2>
     </main>
-    <section id="projects">
+    <section class="projects">
         <h2>Projects</h2>
             <ul>
                 <li>iPoint-Inventory</li>
