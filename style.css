@@ -56,10 +56,10 @@ header {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(10px);
-  
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* línea sutil */
 }
 /* Layout the header navigation in a single row: logo left, links right */
 
@@ -106,6 +106,7 @@ nav ul li a {
 
 
 main {
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -168,4 +169,46 @@ h3 {
 
 .home {
     background-color: #e0e0e0;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; /* espacio entre columnas */
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.projects, .articles, .workexperience {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Títulos y textos */
+.sections h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 🔹 Adaptación móvil */
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+  }
+
+  .projects, .articles {
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+  }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 40px;
 }
